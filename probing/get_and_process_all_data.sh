@@ -102,7 +102,7 @@ function get_semeval() {
 
 get_ontonotes
 # get_spr_dpr
-# get_ud
+get_ud
 
-# get_semeval
+get_semeval
 
