@@ -262,7 +262,7 @@ class BertEmbedderModule(HuggingfaceTransformersEmbedderModule):
         model_path = '/content/drive/My Drive/colab_data/inspect-mnli/uncased_2e-05_3/'
 
         self.model = transformers.BertModel.from_pretrained(
-            model_path, from_tf=True, , cache_dir=self.cache_dir, output_hidden_states=True
+            model_path, from_tf=True, cache_dir=self.cache_dir, output_hidden_states=True
         )
         self.max_pos = self.model.config.max_position_embeddings
 
