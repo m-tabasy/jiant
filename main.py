@@ -4,6 +4,9 @@ log.basicConfig(
     format="%(asctime)s: %(message)s", datefmt="%m/%d %I:%M:%S %p", level=log.INFO
 )  # noqa
 
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
+
 import sys
 
 from jiant.__main__ import main
