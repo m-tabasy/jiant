@@ -259,7 +259,7 @@ class BertEmbedderModule(HuggingfaceTransformersEmbedderModule):
     def __init__(self, args):
         super(BertEmbedderModule, self).__init__(args)
 
-        model_path = '/content/drive/My Drive/colab_data/inspect-mnli/uncased-pt_2e-05_3'
+        model_path = os.environ['BERT_MODEL_DIR']
 
         self.model = transformers.BertModel.from_pretrained(
             model_path, cache_dir=self.cache_dir, output_hidden_states=True
